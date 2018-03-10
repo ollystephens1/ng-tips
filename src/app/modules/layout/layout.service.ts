@@ -7,10 +7,10 @@ export class LayoutService {
 
   public getLinks(): Observable<any> {
     return Observable.of([
-      { label: 'Tips', url: '' },
-      { label: 'Guides', url: '' },
-      { label: 'Questions', url: '' },
-      { label: 'Blog', url: '' },
+      { label: 'Tips', url: 'tips' },
+      { label: 'Guides', url: 'guides' },
+      { label: 'Questions', url: 'questions' },
+      { label: 'Blog', url: 'blog' }
     ])
   }
 }
