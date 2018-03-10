@@ -11,6 +11,6 @@ export class LayoutService {
       { label: 'Guides', url: 'guides' },
       { label: 'Questions', url: 'questions' },
       { label: 'Blog', url: 'blog' }
-    ])
+    ]);
   }
 }
