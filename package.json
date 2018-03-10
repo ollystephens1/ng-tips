@@ -9,7 +9,6 @@
     "lint": "ng lint",
     "ng": "ng",
     "precommit": "npm run lint",
-    "prepush": "npm run lint",
     "start": "ng serve --watch",
     "test": "ng test",
     "tailwind": "./node_modules/.bin/tailwind build ./src/tailwind-build.css -c ./tailwind-config.js -o ./src/tailwind-bundle.css",
