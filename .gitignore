@@ -40,3 +40,6 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+#tailwind bundle
+/src/tailwind-bundle.css

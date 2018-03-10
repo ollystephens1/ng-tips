@@ -11,7 +11,7 @@
     "precommit": "ng lint && ng test",
     "start": "ng serve --watch",
     "test": "ng test",
-    "tailwind": "./node_modules/.bin/tailwind build ./src/tailwind-build.css -c ./tailwind-config.js -o ./src/styles.css",
+    "tailwind": "./node_modules/.bin/tailwind build ./src/tailwind-build.css -c ./tailwind-config.js -o ./src/tailwind-bundle.css",
     "prestart": "npm run tailwind"
   },
   "private": true,
