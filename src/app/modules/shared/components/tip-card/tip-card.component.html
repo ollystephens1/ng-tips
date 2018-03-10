@@ -1,0 +1,16 @@
+<div class="rounded overflow-hidden shadow-md bg-white mb-6">
+  <div class="px-6 py-4">
+    <div class="font-bold text-xl mb-2">
+      <a href="#" class="no-underline hover:underline text-grey-darkest">{{ tip.title }}</a>
+    </div>
+    <p class="text-grey-darker">{{ tip.subtitle }}</p>
+  </div>
+  <div class="px-6 py-4">
+    <span *ngFor="let tag of tip.tags" class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">
+      # {{ tag.name }}
+    </span>
+    <span class="float-right text-xs text-grey-dark mt-1">
+      Submitted by <a href="#" class="no-underline hover:underline text-grey-darker">{{ tip.author.name }}</a>
+    </span>
+  </div>
+</div>
