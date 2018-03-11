@@ -1,5 +1,7 @@
 # NgTips
 
+[Live demo](https://ng-tips-10be7.firebaseapp.com/)
+
 Web app for sharing tips, guides, news and questions about Angular and its related libraries.
 
 ### Development
