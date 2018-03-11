@@ -4,13 +4,21 @@ Web app for sharing tips, guides, news and questions about Angular and its relat
 
 ### Development
 
-run `npm start` and navigate to `http://localhost:4200/`. Live reload enabled.
+Run `npm start` and navigate to `http://localhost:4200/`. Live reload enabled.
 
 ### Production
 
-run `build` for standard production build
+Run `npm run build` for standard production build
 
-run `build:prod` for production build (with AOT)
+Run `npm run build:prod` for production build (with AOT)
+
+### Firebase deployment
+
+After running the production build:
+
+Run `firebase deploy` to deploy production build to Firebase
+
+Once deployed, run `firebase open hosting:site` to open the app on Firebase
 
 ### Specs
 
