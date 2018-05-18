@@ -1,9 +1,9 @@
 <div class="flex mb-4">
   <div class="w-3/4 mx-2">
-    <question-list [questions]="questions$ | async"></question-list>
+    <home-list [items]="questions$ | async"></home-list>
   </div>
   <div class="w-1/4 mx-2">
-    <question-list [questions]="questions$ | async"></question-list>
+    <home-list [items]="questions$ | async"></home-list>
   </div>
 </div>
 

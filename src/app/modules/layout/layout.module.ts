@@ -6,6 +6,7 @@ import { LayoutService } from './layout.service';
 import { HeaderComponent } from './components/header/header.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { SpinnerComponent } from './components/spinner/spinner.component';
 
 @NgModule({
 imports: [
@@ -15,11 +16,13 @@ imports: [
   declarations: [
     HeaderComponent,
     SearchBarComponent,
-    FooterComponent
+    FooterComponent,
+    SpinnerComponent
   ],
   exports: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    SpinnerComponent
   ],
   providers: [
     LayoutService

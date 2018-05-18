@@ -1,8 +1,9 @@
 <div class="flex mb-4">
   <div class="w-2/3 mx-2">
-    <tip-list [tips]="tips$ | async"></tip-list>
+    <h4 class="font-mono py-2">Latest tips</h4>
+    <home-list [items]="tips$ | async"></home-list>
   </div>
   <div class="w-1/3 mx-2">
-    <guide-list [guides]="guides$ | async"></guide-list>
+    <home-list [items]="guides$ | async"></home-list>
   </div>
 </div>
