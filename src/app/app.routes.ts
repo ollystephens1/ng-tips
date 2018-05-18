@@ -24,5 +24,10 @@ export const APP_ROUTES: Routes = [
     path: 'blog', 
     pathMatch: 'full', 
     loadChildren: './modules/blog/blog.module#BlogModule' 
+  },
+  { 
+    path: 'admin', 
+    pathMatch: 'full', 
+    loadChildren: './modules/admin/admin.module#AdminModule' 
   }
 ];

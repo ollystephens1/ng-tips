@@ -5,7 +5,7 @@ import { Tip } from '../models';
 @Injectable()
 export class TipsService {
 
-  public getTips(): Observable<Tip[]> {
+  public getTips(query?: any): Observable<Tip[]> {
     return Observable.of([
       {
         title: 'Loading customizable Tailwind css with Angular CLI',

@@ -1,9 +1,3 @@
-import { Tag, Author } from './index';
+import { Item } from './index';
 
-export interface Tip {
-  title: string;
-  subtitle: string;
-  content: string;
-  tags?: Tag[];
-  author: Author;
-}
+export interface Tip extends Item { }

@@ -4,6 +4,8 @@ import { RouterModule } from '@angular/router';
 
 import { LayoutService } from './layout.service';
 import { HeaderComponent } from './components/header/header.component';
+import { SearchBarComponent } from './components/search-bar/search-bar.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
 imports: [
@@ -11,10 +13,13 @@ imports: [
     RouterModule
   ],
   declarations: [
-    HeaderComponent
+    HeaderComponent,
+    SearchBarComponent,
+    FooterComponent
   ],
   exports: [
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   providers: [
     LayoutService

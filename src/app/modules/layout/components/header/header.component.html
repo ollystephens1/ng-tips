@@ -5,11 +5,12 @@
     </a>
     <span class="font-semibold text-xl">ngular tips</span>
   </div>
-  <div class="text-sm w-full block flex-grow sm:w-auto inline-flex items-end">
+  <div class="text-sm w-1/2 align-middle items-center block inline-flex items-end">
     <a *ngFor="let link of links$ | async" 
         [routerLink]="link.url"
-        class="mt-4 sm:mt-0 no-underline text-white hover:underline mr-4">
+        class="mt-4 sm:mt-0 no-underline text-white hover:bg-red-base mr-4">
       {{ link.label }}
     </a>
+    <search-bar class="self-end w-full"></search-bar>
   </div>
 </nav>

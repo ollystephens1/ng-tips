@@ -1,0 +1,16 @@
+<div class="rounded overflow-hidden shadow-md bg-white mb-6">
+  <div class="px-6 py-4">
+    <div class="font-bold text-xl mb-2">
+      <a href="#" class="no-underline hover:underline text-grey-darkest">{{ question.title }}</a>
+    </div>
+    <p class="text-grey-darker">{{ question.subtitle }}</p>
+  </div>
+  <div class="px-6 py-4">
+    <span *ngFor="let tag of question.tags" class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">
+      # {{ tag.name }}
+    </span>
+    <span class="float-right text-xs text-grey-dark mt-1">
+      By <a href="#" class="no-underline hover:underline text-grey-darker">{{ question.author.name }}</a>
+    </span>
+  </div>
+</div>
