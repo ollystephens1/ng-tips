@@ -8,6 +8,7 @@ import { Item } from '../../models/item.model';
 })
 export class HomeListComponent implements OnInit {
   @Input() items: Item[];
+  @Input() options: any = {};
   
   constructor() { }
 

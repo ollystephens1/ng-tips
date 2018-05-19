@@ -8,6 +8,7 @@ import { Item } from '../../models';
 })
 export class HomeCardComponent implements OnInit {
   @Input() item: Item;
+  @Input() options: any = {};
 
   constructor() { }
 
