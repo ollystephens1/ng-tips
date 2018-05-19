@@ -1,24 +1,25 @@
 <div class="flex mb-4">
   <div class="w-2/3 mx-4">
-    <h2 class="font-sans system-ui py-2 mb-4">Latest tips
+    <h2 class="font-sans system-ui py-2 border-b-2 border-grey-light mb-2">
+      <i class="fa fa-lightbulb-o mr-4 text-grey"></i>Latest tips
       <a [routerLink]="'/tips'" class="pull-right text-xs no-underline text-blue">View all</a>
     </h2>
     <home-list [items]="tips$ | async"></home-list>
-    <h2 class="font-sans system-ui py-2 mb-4">
-      Latest questions
+    <h2 class="font-sans system-ui py-2 border-b-2 border-grey-light mb-2">
+      <i class="fa fa-question-circle-o mr-4 text-grey"></i>Latest questions
       <a [routerLink]="'/questions'" class="pull-right text-xs no-underline text-blue">View all</a>
     </h2>
     <home-list [items]="questions$ | async"></home-list>
   </div>
   
   <div class="w-1/3 mx-4">
-    <h2 class="font-sans system-ui py-2 mb-4">
-      Popular guides
+    <h2 class="font-sans system-ui py-2 border-b-2 border-grey-light mb-2">
+      <i class="fa fa-book mr-4 text-grey"></i>Popular guides
       <a [routerLink]="'/guides'" class="pull-right text-xs no-underline text-blue">View all</a>
     </h2>
     <home-list [items]="guides$ | async" [options]="{ sidebar: true }"></home-list>
-    <h2 class="font-sans system-ui py-2 mb-4">
-      Recent blog posts
+    <h2 class="font-sans system-ui py-2 border-b-2 border-grey-light mb-2">
+      <i class="fa fa-rss mr-4 text-grey"></i>Recent blog posts
       <a [routerLink]="'/blog'" class="pull-right text-xs no-underline text-blue">View all</a>
     </h2>
     <home-list [items]="posts$ | async" [options]="{ sidebar: true }"></home-list>
